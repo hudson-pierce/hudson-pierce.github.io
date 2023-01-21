@@ -7,8 +7,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
-import './App.css';
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,11 +28,17 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div>
+    <div style={style}>
       <MyNavbar/>
       <RouterProvider router={router} />
     </div>
   );
 };
+
+const style = {
+  backgroundColor: '#283046',
+  backgroundSize: "cover",
+  height: '100vh'
+}
 
 export default App;
