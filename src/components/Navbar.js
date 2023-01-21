@@ -12,8 +12,14 @@ export default function MyNavbar() {
     return (
         <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="/" id='navbar-brand'>Hudson Pierce</Navbar.Brand>
-            <Nav className="me-auto">
+            <Nav>
+                <Nav.Link href="/projects">Projects</Nav.Link>
+            </Nav>
+            <Nav>
                 <Nav.Link href="/about">About</Nav.Link>
+            </Nav>
+            <Nav>
+                <Nav.Link href="/contact">Contact</Nav.Link>
             </Nav>
         </Navbar>
     );
