@@ -1,24 +1,21 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import './Navbar.css';
 
-export default function Navbar() {
+// check documentation here: https://react-bootstrap.github.io/components/navbar/
+export default function MyNavbar() {
     return (
-        <nav className='nav'>
-            <a href="/" className='site-title'>
-                Hudson Pierce
-            </a>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/about">About Me</a>
-                </li>
-            </ul>
-        </nav>
+        <Navbar bg="dark" variant="dark">
+            <Navbar.Brand href="/" id='navbar-brand'>Hudson Pierce</Navbar.Brand>
+            <Nav className="me-auto">
+                <Nav.Link href="/about">About</Nav.Link>
+            </Nav>
+        </Navbar>
     );
 };
 

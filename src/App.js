@@ -1,10 +1,7 @@
 import React from 'react';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Navbar from './components/Navbar';
+import MyNavbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 
@@ -24,7 +21,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <div>
-      <Navbar/>
+      <MyNavbar/>
       <RouterProvider router={router} />
     </div>
   );
