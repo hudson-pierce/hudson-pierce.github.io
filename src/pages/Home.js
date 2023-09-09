@@ -17,13 +17,13 @@ const Home = () => {
                     Hey, I'm Hudson Pierce
                 </h1>
                 <h4 style={{paddingTop: 10, paddingBottom: 10}}>
-                    A Fullstack Software Engineer specialized in building Mobile and Web applications.
+                    A Web Developer focused on building websites that are simple and easy to use.
                 </h4>
                 <Button 
                     style={{backgroundColor: '#596071', border: 'none', color: 'white', fontWeight: 500}} 
-                    onClick={() => navigate('/projects')}
+                    onClick={() => navigate('/contact')}
                 >
-                    Check out my work
+                    Contact Me
                 </Button>
             </div>
         </div>

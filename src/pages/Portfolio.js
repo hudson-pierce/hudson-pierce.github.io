@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Projects = () => {
+const Portfolio = () => {
     return (
         <div style={{
             display: 'flex',
@@ -8,10 +8,10 @@ const Projects = () => {
             justifyContent: 'center'
         }}>
             <div style={{padding: '30px', color: 'white'}}>
-                <h1>My Projects</h1>
+                <h1>My Portfolio</h1>
             </div>
         </div>
     )
 }
 
-export default Projects;
+export default Portfolio;
